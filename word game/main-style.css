@@ -1,0 +1,125 @@
+/* TODO: css reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('Quizestyle/quiz1.css');
+
+
+/* TODO: adding external fonts */
+@font-face {
+    font-family: 'VarelaRound';
+    src: url(fonts/VarelaRound.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(fonts/Ubuntu-Light.ttf);
+    font-style: normal;
+}
+
+
+
+/* TODO:start navigation styling*/
+#navigation {
+    display: flex;
+    background-color: #606c76;
+    height: 8vh;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    font-family: 'Ubuntu-Light';
+}
+
+/* TODO: styling heading */
+#navigation h1 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 4px 5px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+/* TODO: styling homepage link */
+#unorder-list > li  {
+    list-style: none;
+}
+
+
+#unorder-list > li > a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+#unorder-list > li > a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    transition: 200ms ease-in;
+}
+
+
+/* end navigation styling */
+
+/* TODO: start main section */
+#main-section {
+    /* border: 2px solid black; */
+    height: 80vh;
+    position: relative;
+    background: linear-gradient(white,rgb(255, 236, 236),rgb(255, 113, 113));
+}
+
+#wrapper {
+     /* border: 1px solid black; */
+    width: 70%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+#wrapper > p {
+    /* color: white; */
+    font-family: 'VarelaRound';
+    font-size: 1.2rem;
+    color: rgb(138, 138, 138);
+    text-align: center;
+}
+
+/* TODO: start buttom styling */
+#start {
+    /* border: 1px solid blue; */
+    text-align: center;
+    padding: 8rem;
+}
+
+#start a {
+    /* border: 1px solid red; */
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: 'VarelaRound';
+    padding: 6rem 4.5rem;
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: box-shadow 200ms ease-out;
+    box-shadow: 0 0 20px 5px rgb(189, 189, 189);
+}
+
+#start a:active{
+    box-shadow: 0 0 0 20px rgb(252, 145, 145);
+}
+
+/* TODO: end main section */
+
+#footer-section {
+    /* border: 1px solid black; */
+    padding: 5vh 20px;
+    background: #606c76;
+    font-family: 'VarelaRound';
+    color: white;
+}
